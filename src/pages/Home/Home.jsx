@@ -12,8 +12,8 @@ const Home = () => {
             <Headers></Headers>
             <LatestNews></LatestNews>
             <Navbar></Navbar>
-            <h2 className="text-3xl font-poppins font-bold ">Home page</h2>
-            <div className="grid gap-6 grid-cols-1 lg:grid-cols-4">
+            
+            <div className="my-12 grid gap-6 grid-cols-1 lg:grid-cols-4">
                 <div className="border border-blue-600">
                     <LeftSideBar></LeftSideBar>
                 </div>
