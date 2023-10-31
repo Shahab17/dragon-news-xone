@@ -3,10 +3,9 @@ import logo from "../../../assets/logo.png";
 
 const Headers = () => {
   return (
-    <div className="text-center  mt-12">
-      <div className="flex justify-center mb-5">
-        <img src={logo} alt="" />
-      </div>
+    <div className="text-center space-y-2 mt-12">
+      <img className="mx-auto mb-4" src={logo} alt="" />
+
       <p>Journalism Without Fear or Favour</p>
       <p>{moment().format("dddd, MMMM D, YYYY")} </p>
     </div>

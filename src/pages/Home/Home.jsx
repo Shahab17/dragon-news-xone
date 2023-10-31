@@ -1,6 +1,7 @@
 import Headers from "../Shared/Headers/Headers";
 import Navbar from "../Shared/Navbar/Navbar";
 import RightSideBar from "../Shared/RightSideBar/RightSideBar";
+import LatestNews from "./LatestNews";
 import LeftSideBar from "./LeftSideBar";
 
  
@@ -9,6 +10,7 @@ const Home = () => {
     return (
         <div>
             <Headers></Headers>
+            <LatestNews></LatestNews>
             <Navbar></Navbar>
             <h2 className="text-3xl font-poppins font-bold ">Home page</h2>
             <div className="grid gap-6 grid-cols-1 lg:grid-cols-4">
