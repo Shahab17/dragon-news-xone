@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <div className="lg:col-span-2 border border-red-400">
                     <h1 className="text-3xl">Middle Contents</h1>
-                </div>
+                </div> 
                 <div className="border border-gray-700">
                     <RightSideBar></RightSideBar>
                 </div>
