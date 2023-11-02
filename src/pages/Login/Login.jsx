@@ -2,12 +2,24 @@ import { Link } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 
 const Login = () => {
+
+  const handleLogin =(e)=>{
+    e.preventDefault()
+    // const email= e.target.email.value
+    // console.log(email)
+
+    // value neya jay another way te eitai just r kichu na
+    const form = new FormData(e.currentTarget)
+    console.log(form.get('password'))
+
+  }
+
   return (
     <div>
       <Navbar></Navbar>
       <div className="my-12 bg-gray-200 rounded-md shadow-xl md:w-3/4 lg:w-1/2 mx-auto p-4">
         <h2 className=" lg:text-3xl font-semibold text-center">Please Login </h2>
-        <form className="card-body  w-full mx-auto">
+        <form onSubmit={handleLogin} className="card-body  w-full mx-auto">
           <div className="form-control">
             <input
               type="email"
