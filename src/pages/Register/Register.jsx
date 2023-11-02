@@ -15,8 +15,8 @@ const Register = () => {
         <h2 className=" lg:text-3xl font-semibold text-center">
           Please Register{" "}
         </h2>
-        <form onSubmit={handleRegister} className="card-body  w-full mx-auto">
-          <div className="form-control mb-3">
+        <form onSubmit={handleRegister} className="card-body  w-full mx-auto space-y-3">
+          <div className="form-control  ">
             <input
               type="text"
               name="name"
@@ -34,7 +34,16 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-control my-3">
+          <div className="form-control">
+            <input
+              type="text"
+              name="photo"
+              placeholder="Photo URL"
+              className="input "
+              required
+            />
+          </div>
+          <div className="form-control ">
             <input
               type="password"
               name="password"

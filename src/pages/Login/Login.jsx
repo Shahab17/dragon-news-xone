@@ -47,7 +47,7 @@ const Login = () => {
             <button className="btn  bg-gradient-to-r from-cyan-100 to-blue-700">Login</button>
           </div>
         </form>
-        <p className="text-center">Dont Have an Acoount? <Link to='/register' className="text-blue-800 font-medium"> Register </Link> </p>
+        <p className="text-center">Dont Have an Acoount? Please <Link to='/register' className="text-blue-800 font-medium"> Register </Link> </p>
       </div>
     </div>
   );
