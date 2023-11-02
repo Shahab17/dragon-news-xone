@@ -6,15 +6,15 @@ const Navbar = () => {
     <>
       <li className="">
         {" "}
-        <NavLink>Home</NavLink>{" "}
+        <NavLink to='/'>Home</NavLink>{" "}
       </li>
-      <li className="lg:mx-6">
+      <li className="md:mx-6">
         {" "}
-        <NavLink>About</NavLink>{" "}
+        <NavLink to='/about'>About</NavLink>{" "}
       </li>
       <li>
         {" "}
-        <NavLink>Contact</NavLink>{" "}
+        <NavLink to='/contact'>Contact</NavLink>{" "}
       </li>
     </>
   );
@@ -56,7 +56,7 @@ const Navbar = () => {
             <img src= {userIcon} />
           </div>
         </label>
-        <Link className="btn ml-3">Login</Link>
+        <Link to='/login' className="btn ml-3">Login</Link>
       </div>
     </div>
   );
