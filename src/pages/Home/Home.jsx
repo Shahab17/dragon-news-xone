@@ -23,11 +23,11 @@ const Home = () => {
 
         {/* main content  */}
         <div className="lg:col-span-2  ">
-          <h1 className="lg:text-3xl font-semibold text-center mb-12">News Xone</h1>
-          {news.map((aNews) => (
-            <NewsCard key={aNews.id} newsData={aNews}>
-             
-            </NewsCard>
+          <h1 className="lg:text-3xl font-semibold text-center mb-12">
+            News Xone
+          </h1>
+          {news.map((aNews, i) => (
+            <NewsCard key={i} newsData={aNews}></NewsCard>
           ))}
         </div>
 

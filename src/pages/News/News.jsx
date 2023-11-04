@@ -11,8 +11,8 @@ const News = () => {
     <div>
       <Headers></Headers>
       <Navbar></Navbar>
-      <div className="grid grid-cols-4">
-        <div className="col-span-3">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="lg:col-span-3">
           <h2 className="lg:text-3xl text-center font-semibold">News Xone</h2>
           <p>{id}</p>
         </div>
