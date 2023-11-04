@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
 
-    const handleRegister =(e)=>{
-        e.preventDefault()
+  const handleRegister = (e) => {
+    e.preventDefault();
+    // another way to get form field value
+    const form = new FormData(e.currentTarget);
 
-    }
+    const name = form.get("name");
+    const email = form.get("email");
+    const photo = form.get("photo");
+    const password = form.get("password");
+
+    console.log(name, email, photo, password);
+
+    createUser(email, password)
+      .then((result) => console.log(result.user))
+      .catch((error) => console.error(error));
+  };
 
   return (
     <div>
@@ -15,7 +30,10 @@ const Register = () => {
         <h2 className=" lg:text-3xl font-semibold text-center">
           Please Register{" "}
         </h2>
-        <form onSubmit={handleRegister} className="card-body  w-full mx-auto space-y-3">
+        <form
+          onSubmit={handleRegister}
+          className="card-body  w-full mx-auto space-y-3"
+        >
           <div className="form-control  ">
             <input
               type="text"

@@ -6,17 +6,17 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import qXone1 from '../../../assets/qZone1.png'
-import qXone2 from '../../../assets/qZone2.png'
-import qXone3 from '../../../assets/qZone3.png'
+import qXone1 from "../../../assets/qZone1.png";
+import qXone2 from "../../../assets/qZone2.png";
+import qXone3 from "../../../assets/qZone3.png";
 
 const RightSideBar = () => {
   return (
     <div>
       {/* Login part */}
-      <div className="p-4  space-y-3 mb-6">
+      <div className="   mb-6">
         <h2 className="lg:text-3xl font-semibold ">Login With</h2>
-        <button className="btn  btn-outline w-full text-blue-700">
+        <button className="btn my-4 btn-outline w-full text-blue-700">
           <FaGoogle></FaGoogle>
           Login With Google
         </button>

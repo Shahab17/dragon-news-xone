@@ -14,7 +14,7 @@ const LeftSideBar = () => {
   return (
     <div className="space-y-5 ">
       <h2 className="lg:text-3xl font-semibold">
-        All Categories {categories.length}{" "}
+        All Categories 
       </h2>
       {categories.map((category) => (
         <NavLink to={`/category/${category.id}`} key={category.id} className="block ml-10 text-[#9F9F9F]">
