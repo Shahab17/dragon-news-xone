@@ -58,9 +58,9 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn  bg-gradient-to-r from-cyan-100 to-blue-700">
+           <button className="btn  bg-gradient-to-r from-cyan-100 to-blue-700">
               Login
-            </button>
+            </button> 
           </div>
         </form>
         <p className="text-center">

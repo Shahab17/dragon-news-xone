@@ -3,7 +3,7 @@ import logo from "../../../assets/logo.png";
 
 const Headers = () => {
   return (
-    <div className="text-center space-y-2 mt-12">
+    <div className="text-center space-y-2 my-12">
       <img className="mx-auto mb-4" src={logo} alt="" />
 
       <p>Journalism Without Fear or Favour</p>
